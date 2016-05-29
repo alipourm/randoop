@@ -22,6 +22,7 @@ public class Main {
 
     handlers = new ArrayList<CommandHandler>();
     handlers.add(new GenTests());
+    handlers.add(new GenSwarmTests());
     handlers.add(new Help());
 
     // These are very ad-hoc commands that we don't want to 
