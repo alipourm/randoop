@@ -16,7 +16,7 @@ import java.util.List;
  * Created by alipourm on 5/29/16.
  */
 public class SwarmForwardGen extends ForwardGenerator {
-    List<Operation> localstatements;
+    List<Operation> localstatements = new ArrayList<>();
     public SwarmForwardGen(List<Operation> statements, long timeMillis, int maxSequences, ComponentManager componentManager, IStopper stopper, RandoopListenerManager listenerManager, List<ITestFilter> fs) {
         super(statements, timeMillis, maxSequences, componentManager, stopper, listenerManager, fs);
         localstatements.addAll(statements);
