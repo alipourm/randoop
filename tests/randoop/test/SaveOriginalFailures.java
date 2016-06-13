@@ -3,10 +3,7 @@ package randoop.test;
 import java.io.IOException;
 import java.util.Enumeration;
 
-import junit.framework.Test;
-import junit.framework.TestFailure;
-import junit.framework.TestResult;
-import junit.framework.TestSuite;
+import junit.framework.*;
 import randoop.Globals;
 import randoop.util.Files;
 import randoop.util.Reflection;
@@ -15,7 +12,7 @@ public class SaveOriginalFailures {
 
   public static void failureReproduced(Class<? extends Test> junitTest) {
     try {
-      TestSuite ts= new TestSuite(junitTest);
+      TestSuite ts= new TestSuite((Class<? extends TestCase>) junitTest);
       TestResult result = new TestResult(); 
       ts.run(result);
       Enumeration failures = result.failures();

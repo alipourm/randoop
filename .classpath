@@ -3,8 +3,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="tests"/>
 	<classpathentry exported="true" kind="lib" path="lib/plume.jar"/>
-	<classpathentry kind="lib" path="lib/asm-2.2.1.jar"/>
-	<classpathentry kind="lib" path="lib/asm-tree-2.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/asm-5.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/asm-tree-5.0.3.jar"/>
 	<classpathentry kind="lib" path="lib/bcel.jar"/>
 	<classpathentry kind="lib" path="lib/daikon.jar"/>
 	<classpathentry kind="lib" path="lib/dcomp_premain.jar"/>
